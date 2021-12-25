@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+}
+.container h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.product-grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.loading-product {
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+}
