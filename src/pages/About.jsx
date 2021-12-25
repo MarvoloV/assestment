@@ -5,7 +5,7 @@ import analis from '../assets/analisis.png';
 const About = () => (
   <>
     <h1 className="title">Jorge Luis Adco Ccahuay</h1>
-    <div className="about">
+    <div className="about animate__animated animate__fadeIn">
       <div className="about-description">
         <p>
           Jorge Adco Hola 👋🏻, Soy de lima-Peru. Developer En Proceso. Mis serie
@@ -17,11 +17,11 @@ const About = () => (
           Londres.
         </p>
       </div>
-      <div className="about-image">
+      <div className="about-image animate__animated animate__fadeIn">
         <img src={analis} alt="forex" />
       </div>
     </div>
-    <div className="stack">
+    <div className="stack animate__animated animate__fadeIn">
       <h2>Temas aprendidos en el Bootcamp</h2>
       <ul>
         <li>

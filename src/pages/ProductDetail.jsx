@@ -9,7 +9,7 @@ const ProductDetail = () => {
   return (
     <>
       <hr />
-      <div className="productDetail-container">
+      <div className="productDetail-container ">
         {loading && (
           <p className="animate__animated animate__flash animate__slow loading-product">
             Loading...
@@ -17,10 +17,10 @@ const ProductDetail = () => {
         )}
         {!loading && (
           <>
-            <div className="productDetail-image">
+            <div className="productDetail-image animate__animated animate__fadeIn">
               <img src={data.image} alt={data.title} />
             </div>
-            <div className="productDetail-info">
+            <div className="productDetail-info animate__animated animate__fadeIn">
               <h1>{`${data.title} - ${data.category}`}</h1>
               <p>{data.description}</p>
               <span className="info-price">{`$/${data.price}`}</span>
