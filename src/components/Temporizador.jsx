@@ -1,14 +1,9 @@
-/* eslint-disable implicit-arrow-linebreak */
 import React, { useState, useEffect } from 'react';
 import Proptypes from 'prop-types';
 
-// eslint-disable-next-line react/prop-types
 const Temporizador = ({ hoursMinSecs, setIsActive }) => {
   const { minutes = 0, seconds = 60 } = hoursMinSecs;
   const [[mins, secs], setTime] = useState([minutes, seconds]);
-
-  // const reset = () => setTime([parseInt(minutes, 10), parseInt(seconds, 10)]);
-
   const tick = () => {
     if (mins === 0 && secs === 0) {
       setIsActive(false);
@@ -39,4 +34,5 @@ export default Temporizador;
 Temporizador.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
   hoursMinSecs: Proptypes.object.isRequired,
+  setIsActive: Proptypes.func.isRequired,
 };
